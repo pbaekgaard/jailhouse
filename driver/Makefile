@@ -24,6 +24,6 @@ jailhouse-$(CONFIG_OF) += vpci_template.dtb.o
 
 targets += vpci_template.dtb vpci_template.dtb.S
 
-.SECONDARY: \
+.NOTINTERMEDIATE: \
         $(obj)/vpci_template.dtb.S \
         $(obj)/vpci_template.dtb
